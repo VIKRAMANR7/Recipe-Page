@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+span {
+  font-weight: bold;
+  color: hsl(30, 10%, 34%);
+}
+ul li,
+ol li {
+  padding-bottom: 7px;
+  padding-left: 10px;
+}
+ol li {
+  padding-right: 10px;
+}
+ul li:last-child {
+  padding-bottom: 0;
+}
+
+@layer components {
+  .brown-heading {
+    @apply text-nutmeg text-2xl font-Young-Serif py-5;
+  }
+}
+
+@layer components {
+  .hr-line {
+    @apply border-b-[1px];
+  }
+}
+
+@layer components {
+  .grid-lines {
+    @apply pl-5 grid grid-cols-2;
+  }
+}
